@@ -1,11 +1,9 @@
 @charset "utf-8";
-/* CSS Document */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,8 +29,17 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+	height: 100%;
+}
 body {
+	min-height: 100%;
 	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(../img/ornements-top.png) repeat-x center top,
+				/*url(../img/ornements-left.png) repeat-y left center,
+				url(../img/ornements-right.png) repeat-y right center,*/
+				url(../img/bg.jpg) repeat center top;
 }
 ol, ul {
 	list-style: none;
@@ -48,4 +55,35 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+
+
+/* ===== GENERAL ===== */
+.clear {
+	clear: both;	
+}
+
+.hide {
+	display: none;	
+}
+
+
+
+/* ===== STORY TREE ===== */
+#story-tree {}
+
+.story-scene {}
+
+.scene-text {
+	width: 450px;
+	padding: 3px 5px;
+	border: 1px solid #000;
+}
+
+.scene-action {
+	float: left;
+	width: 150px;
+	padding: 3px 5px;
+	border: 1px solid #000;
 }

@@ -1,0 +1,25 @@
+<div ng-controller="createStoryCtrl">
+	{{ story.title }}
+    
+    <p>
+    
+	{{ story.scenes.actions }}
+    </p>
+    
+    <div id="story-tree">
+        <div class="story-scene" ng-repeat="scene in story.scenes">
+        	<div class="scene-text">
+        		{{ scene.text }}
+            </div>
+        	
+            <div class="scene-actions">
+                <div class="scene-action" ng-repeat="action in scene.actions">
+                    {{ action.text }}
+                </div>
+            </div>
+        </div>
+    
+        <div id="story-levels">
+        </div> <!-- #story-levels -->
+    </div> <!-- #story-tree -->
+</div> <!-- createStoryCtrl -->
